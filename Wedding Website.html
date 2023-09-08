@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wedding Website</title>
+    <link href="homestyle.css" rel="stylesheet" />
+    <style>
+      &#183; {
+          font-size: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="title">
+      <h1>Corey & Kahla</h1>
+      <h2>SOON TO BE THE DAVIS'</h2>
+      <hr />
+    </div>
+
+    <ul style="align-items: center">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="invitations.html">RSVP</a></li>
+      <li><a href="registry.html">Registry</a></li>
+      <li><a href="info.html">Information</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+    </ul>
+
+    <div class="howwemet">
+      <img
+        src="10384035_933086563373712_1900066356734600099_n.jpg"
+        alt="engagement photo"
+        class="image1"
+      />
+      <div class="text2">
+        <h3>HOW WE MET</h3>
+        <p>
+          Our story began at a friend's house, surrounded by laughter and good
+          times. Our eyes met, and in that instant, something special sparked
+          between us. Conversations flowed easily, revealing our shared
+          interests and quirks. We talked like we'd known each other forever.
+          The more we talked, the more it felt like we'd found something
+          special. As the evening turned into night, we realized that our
+          meeting was just the beginning. From that day on, our journey has been
+          filled with love and laughter. It was as if we were meant to find each
+          other that night.
+        </p>
+      </div>
+    </div>
+
+    <footer style="text-align: center">
+      Kileia Riley &#183; Creative Commons &#183; August 2023
+    </footer>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
